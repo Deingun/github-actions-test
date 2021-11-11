@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class HelloWorldController {
 
-    @GetMapping("/helloworld")
+    @GetMapping("/helloworld/1")
     @ResponseStatus(HttpStatus.OK)
     public String helloworld() {
         return "Hello World";
