@@ -10,9 +10,9 @@ import java.util.List;
 @RestController
 public class HelloWorldController {
 
-    @GetMapping("/helloworld/1")
+    @GetMapping("/helloworld")
     @ResponseStatus(HttpStatus.OK)
     public String helloworld() {
-        return "Hello World";
+        return "Hello Moon";
     }
 }

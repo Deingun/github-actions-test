@@ -38,7 +38,7 @@ class HelloWorldControllerTest {
     @Test
     void helloworld() throws Exception {
 
-        MvcResult mvcResult = mockMvc.perform(get("/helloworld/1"))
+        MvcResult mvcResult = mockMvc.perform(get("/helloworld"))
                 .andExpect(status().isOk())
                 .andReturn();
 
