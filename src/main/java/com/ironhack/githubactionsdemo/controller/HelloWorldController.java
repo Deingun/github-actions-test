@@ -13,6 +13,6 @@ public class HelloWorldController {
     @GetMapping("/helloworld")
     @ResponseStatus(HttpStatus.OK)
     public String helloworld() {
-        return "Hello Moon";
+        return "Hello World";
     }
 }
