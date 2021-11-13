@@ -36,12 +36,22 @@ class HelloWorldControllerTest {
     }
 
     @Test
-    void helloworld() throws Exception {
+    void helloWorld() throws Exception {
 
         MvcResult mvcResult = mockMvc.perform(get("/helloworld"))
                 .andExpect(status().isOk())
                 .andReturn();
 
         assertTrue(mvcResult.getResponse().getContentAsString(StandardCharsets.UTF_8).contains("Hello World"));
+    }
+
+    @Test
+    void helloDavid() throws Exception {
+
+        MvcResult mvcResult = mockMvc.perform(get("/hellodavid"))
+                .andExpect(status().isOk())
+                .andReturn();
+
+        assertTrue(mvcResult.getResponse().getContentAsString(StandardCharsets.UTF_8).contains("David"));
     }
 }

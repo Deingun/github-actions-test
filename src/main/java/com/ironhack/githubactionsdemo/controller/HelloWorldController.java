@@ -15,4 +15,10 @@ public class HelloWorldController {
     public String helloworld() {
         return "Hello World";
     }
+
+    @GetMapping("/hellodavid")
+    @ResponseStatus(HttpStatus.OK)
+    public String hellodavid() {
+        return "David is the best";
+    }
 }
